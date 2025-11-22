@@ -95,7 +95,18 @@ const Network = () => {
 export const NetworkScene: React.FC = () => {
   return (
     <div className="absolute inset-0 z-0 pointer-events-none">
-      <Canvas camera={{ position: [0, 0, 8], fov: 60 }} gl={{ antialias: true }}>
+      <Canvas 
+        camera={{ position: [0, 0, 8], fov: 60 }} 
+        gl={{ 
+          antialias: true,
+          powerPreference: "high-performance",
+          alpha: false,
+          preserveDrawingBuffer: false
+        }}
+        onCreated={({ gl }) => {
+          gl.setClearColor('#020202');
+        }}
+      >
         <color attach="background" args={['#020202']} />
         <fog attach="fog" args={['#020202', 5, 20]} />
         
