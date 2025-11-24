@@ -293,9 +293,7 @@ const App: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed mb-12 font-light border-l-2 border-gray-800 pl-6"
             >
-              AptosRoom replaces the "Middleman" with the <strong className="text-white">Engine</strong>. 
-              A trustless digital workspace where payments, reputation, and verification 
-              are governed by code, not centralized administrators.
+              APTOS ROOM is more than just a platform—it's a thriving ecosystem where Web3 builders, developers, designers, and creators converge to contribute their talents to meaningful projects while earning rewards in a trustless environment.
             </motion.p>
             
             <motion.div 
