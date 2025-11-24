@@ -134,33 +134,17 @@ export default async function handler(
                     background: radial-gradient(circle, rgba(0,240,255,0.2) 0%, transparent 70%);
                     border-radius: 50%;
                   }
-                  .logo-container {
-                    margin-bottom: 25px;
-                    position: relative;
-                    z-index: 1;
-                  }
-                  .logo { 
-                    width: 80px;
-                    height: 80px;
-                    margin: 0 auto 15px;
-                    background: linear-gradient(135deg, #00F0FF 0%, #0080FF 100%);
-                    border-radius: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 36px;
-                    font-weight: 900;
-                    color: #050505;
-                    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.3);
-                  }
                   .brand-name {
-                    font-size: 28px;
+                    font-size: 32px;
                     font-weight: 900;
-                    letter-spacing: 2px;
+                    letter-spacing: 3px;
                     background: linear-gradient(135deg, #00F0FF 0%, #ffffff 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
+                    margin-bottom: 30px;
+                    position: relative;
+                    z-index: 1;
                   }
                   .title { 
                     font-size: 36px; 
@@ -326,10 +310,7 @@ export default async function handler(
                   <div class="container">
                     <div class="header-banner"></div>
                     <div class="header">
-                      <div class="logo-container">
-                        <div class="logo">AR</div>
-                        <div class="brand-name">APTOSROOM</div>
-                      </div>
+                      <div class="brand-name">APTOS ROOM</div>
                       <h1 class="title">ACCESS GRANTED ✓</h1>
                       <p class="subtitle">Welcome to the Future of Decentralized Work</p>
                     </div>
