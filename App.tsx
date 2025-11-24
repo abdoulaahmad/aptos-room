@@ -209,14 +209,14 @@ const WhitelistForm = () => {
                   {errorMessage}
                 </motion.div>
               )}
-              <div className="flex justify-center gap-6 mt-8">
-                <a href="https://x.com/AptosRoom?s=09" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="X (Twitter)">
+              <div className="flex justify-center gap-6 mt-8 pointer-events-auto">
+                <a href="https://x.com/AptosRoom?s=09" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors cursor-pointer" aria-label="X (Twitter)">
                   <XLogo />
                 </a>
-                <a href="https://t.me/+nzOvO5pymwY2Zjhk" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="Telegram">
+                <a href="https://t.me/+nzOvO5pymwY2Zjhk" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors cursor-pointer" aria-label="Telegram">
                   <Send size={28} />
                 </a>
-                <a href="https://discord.gg/CYVKTxyEvz" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="Discord">
+                <a href="https://discord.gg/CYVKTxyEvz" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors cursor-pointer" aria-label="Discord">
                   <DiscordLogo />
                 </a>
               </div>
