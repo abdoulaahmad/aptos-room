@@ -209,6 +209,17 @@ const WhitelistForm = () => {
                   {errorMessage}
                 </motion.div>
               )}
+              <div className="flex justify-center gap-6 mt-8">
+                <a href="https://x.com/AptosRoom?s=09" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="X (Twitter)">
+                  <XLogo />
+                </a>
+                <a href="https://t.me/+nzOvO5pymwY2Zjhk" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="Telegram">
+                  <Send size={28} />
+                </a>
+                <a href="https://discord.gg/CYVKTxyEvz" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-aptos-cyan transition-colors" aria-label="Discord">
+                  <DiscordLogo />
+                </a>
+              </div>
           </motion.form>
         )}
       </AnimatePresence>
@@ -581,17 +592,6 @@ const App: React.FC = () => {
             </div>
             <div className="text-xs font-mono uppercase tracking-widest opacity-50">
                 &copy; 2025 AptosRoom. Built on Move.
-            </div>
-            <div className="flex gap-6">
-               <a href="https://x.com/AptosRoom?s=09" target="_blank" rel="noopener noreferrer" className="hover:text-aptos-cyan transition-colors" aria-label="X (Twitter)">
-                 <XLogo />
-               </a>
-               <a href="https://t.me/+nzOvO5pymwY2Zjhk" target="_blank" rel="noopener noreferrer" className="hover:text-aptos-cyan transition-colors" aria-label="Telegram">
-                 <Send size={28} />
-               </a>
-               <a href="https://discord.gg/CYVKTxyEvz" target="_blank" rel="noopener noreferrer" className="hover:text-aptos-cyan transition-colors" aria-label="Discord">
-                 <DiscordLogo />
-               </a>
             </div>
         </div>
       </footer>
