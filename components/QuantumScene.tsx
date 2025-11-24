@@ -52,9 +52,7 @@ const Connection: React.FC<{ start: [number, number, number], end: [number, numb
 };
 
 const Network = () => {
-  // Reduce node count on mobile for better performance
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-  const count = isMobile ? 30 : 60;
+  const count = 60;
   const nodes = useMemo(() => {
     const temp: [number, number, number][] = [];
     for (let i = 0; i < count; i++) {
@@ -64,7 +62,7 @@ const Network = () => {
       temp.push([x, y, z]);
     }
     return temp;
-  }, [count]);
+  }, []);
 
   const groupRef = useRef<THREE.Group>(null);
 
@@ -95,26 +93,18 @@ const Network = () => {
 };
 
 export const NetworkScene: React.FC = () => {
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-  
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none" style={{ transform: 'translateZ(0)', willChange: 'transform' }}>
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <Canvas 
         camera={{ position: [0, 0, 8], fov: 60 }} 
-        dpr={isMobile ? [1, 1.5] : [1, 2]}
         gl={{ 
-          antialias: !isMobile,
-          powerPreference: isMobile ? "default" : "high-performance",
+          antialias: true,
+          powerPreference: "high-performance",
           alpha: false,
-          preserveDrawingBuffer: false,
-          stencil: false,
-          depth: true
+          preserveDrawingBuffer: false
         }}
         onCreated={({ gl }) => {
           gl.setClearColor('#020202');
-          if (isMobile) {
-            gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-          }
         }}
       >
         <color attach="background" args={['#020202']} />

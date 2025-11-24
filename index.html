@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AptosRoom: Decentralized Talent Ecosystem</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,24 +44,11 @@
         scroll-behavior: smooth;
         scroll-padding-top: 100px;
         background-color: #050505;
-        /* iOS viewport height fix */
-        height: -webkit-fill-available;
       }
       body {
         background-color: #050505;
         color: #E0E0E0;
         overflow-x: hidden;
-        /* iOS touch optimization */
-        -webkit-overflow-scrolling: touch;
-        touch-action: manipulation;
-        /* iOS viewport height fix */
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
-      }
-      /* Fix for iOS Safari address bar */
-      #root {
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
       }
       ::selection {
         background-color: #00F0FF;

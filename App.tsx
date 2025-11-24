@@ -262,7 +262,7 @@ const App: React.FC = () => {
       />
 
       {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-aptos-dark/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`} style={{ WebkitBackfaceVisibility: 'hidden', transform: 'translateZ(0)' } as React.CSSProperties}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-aptos-dark/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="transition-transform duration-700 group-hover:rotate-180">
@@ -310,13 +310,13 @@ const App: React.FC = () => {
       )}
 
       {/* Hero Section */}
-      <header className="relative flex items-center justify-center overflow-hidden" style={{ minHeight: '100vh', WebkitMinHeight: '-webkit-fill-available' } as React.CSSProperties}>
+      <header className="relative h-screen flex items-center justify-center overflow-hidden">
         <NetworkScene />
         
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-aptos-dark/30 to-aptos-dark pointer-events-none" style={{ transform: 'translateZ(0)' }} />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-aptos-dark/30 to-aptos-dark pointer-events-none" />
         
         {/* Vignette */}
-        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,#050505_100%)]" style={{ transform: 'translateZ(0)' }}></div>
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,#050505_100%)]"></div>
 
         <div className="relative z-10 container mx-auto px-6 pt-40 md:pt-32">
           <div className="max-w-5xl">
