@@ -80,7 +80,7 @@ export default async function handler(
         const resend = new Resend(resendApiKey);
         
         await resend.emails.send({
-          from: 'AptosRoom <onboarding@resend.dev>', // Use your verified domain or resend.dev for testing
+          from: 'AptosRoom <noreply@aptosroom.app>',
           to: email,
           subject: 'Welcome to AptosRoom Waitlist! 🚀',
           html: `
