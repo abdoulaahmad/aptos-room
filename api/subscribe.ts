@@ -82,7 +82,7 @@ export default async function handler(
         await resend.emails.send({
           from: 'AptosRoom <noreply@aptosroom.app>',
           to: email,
-          subject: '✨ Welcome to AptosRoom - Access Granted!',
+          subject: 'Welcome to AptosRoom - Access Granted',
           html: `
             <!DOCTYPE html>
             <html lang="en">
@@ -202,9 +202,8 @@ export default async function handler(
                     align-items: center;
                   }
                   .benefits-title::before {
-                    content: '✨';
-                    margin-right: 10px;
-                    font-size: 24px;
+                    content: '';
+                    display: none;
                   }
                   ul { 
                     list-style: none;
@@ -316,18 +315,18 @@ export default async function handler(
                     </div>
                     
                     <div class="content">
-                      <p class="welcome-text">Hello there! 👋</p>
+                      <p class="welcome-text">Welcome!</p>
                       
                       <p>You've successfully joined the <span class="highlight">AptosRoom Priority Waitlist</span>. You're now part of an exclusive community building the next generation of trustless talent ecosystems on the blockchain.</p>
                       
                       <div class="benefits-section">
                         <div class="benefits-title">What You'll Get</div>
                         <ul>
-                          <li>🚀 First to know when we launch</li>
-                          <li>🎁 Exclusive early access to platform features</li>
-                          <li>💎 Founding member benefits and rewards</li>
-                          <li>📰 Regular updates on development progress</li>
-                          <li>🤝 Priority support from our team</li>
+                          <li>First to know when we launch</li>
+                          <li>Exclusive early access to platform features</li>
+                          <li>Founding member benefits and rewards</li>
+                          <li>Regular updates on development progress</li>
+                          <li>Priority support from our team</li>
                         </ul>
                       </div>
                       
@@ -336,20 +335,20 @@ export default async function handler(
                       <p><strong style="color: #ffffff;">APTOS ROOM</strong> is more than just a platform—it's a thriving ecosystem where Web3 builders, developers, designers, and creators converge to contribute their talents to meaningful projects while earning rewards in a <span class="highlight">trustless environment</span>.</p>
                       
                       <p style="text-align: center; margin-top: 25px;">
-                        <span class="tech-badge">⚡ Built on Aptos Move</span>
+                        <span class="tech-badge">Built on Aptos Move</span>
                       </p>
                     </div>
                     
                     <div class="cta">
-                      <a href="https://aptosroom.app" class="button">🌐 Explore AptosRoom</a>
+                      <a href="https://aptosroom.app" class="button">Explore AptosRoom</a>
                     </div>
                     
                     <div class="footer">
                       <p class="footer-text">© 2025 AptosRoom • Built on Move</p>
                       <div class="social-links">
-                        <a href="https://x.com/AptosRoom?s=09">𝕏 Twitter</a>
-                        <a href="https://t.me/+nzOvO5pymwY2Zjhk">📱 Telegram</a>
-                        <a href="https://discord.gg/CYVKTxyEvz">💬 Discord</a>
+                        <a href="https://x.com/AptosRoom?s=09">X (Twitter)</a>
+                        <a href="https://t.me/+nzOvO5pymwY2Zjhk">Telegram</a>
+                        <a href="https://discord.gg/CYVKTxyEvz">Discord</a>
                       </div>
                       <p style="color: #505050; font-size: 12px; margin-top: 20px;">
                         You're receiving this because you subscribed to AptosRoom updates.
