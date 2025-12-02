@@ -29,8 +29,8 @@ export const ArchitectureGrid: React.FC = () => {
       color: "text-purple-400",
       bg: "bg-purple-400/10",
       borderColor: "border-purple-400",
-      desc: "A pool of token-staked community members are randomly selected to review submissions. Jurors are rewarded for accuracy and slashed for malicious behavior. A transparent, fair process.",
-      features: ["Random Selection", "Stake Slashing", "Decentralized QC"]
+      desc: "A pool of skill community members are randomly selected to review submissions. Jurors are rewarded for accuracy and slashed for malicious behavior. A transparent, fair process.",
+      features: ["Random Selection", "Peer Review", "Decentralized QC"]
     },
     keycard: {
       title: "The Keycard",
