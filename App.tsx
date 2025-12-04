@@ -356,12 +356,11 @@ const App: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-               <a href="/concept-architecture.pdf" download="AptosRoom-Concept-Architecture.pdf" className="px-8 py-4 bg-aptos-cyan text-black font-bold text-lg rounded hover:bg-white transition-all flex flex-col items-center justify-center group shadow-[0_0_20px_rgba(0,240,255,0.3)] hover:shadow-[0_0_40px_rgba(0,240,255,0.5)] cursor-pointer">
+               <a href="/Aptos Room WhitePaper V1.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-aptos-cyan text-black font-bold text-lg rounded hover:bg-white transition-all flex flex-col items-center justify-center group shadow-[0_0_20px_rgba(0,240,255,0.3)] hover:shadow-[0_0_40px_rgba(0,240,255,0.5)] cursor-pointer">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono uppercase tracking-wider">Read Concept Architecture</span>
+                    <span className="font-mono uppercase tracking-wider">Read Whitepaper</span>
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <span className="text-xs font-mono mt-1 opacity-70">(Whitepaper Loading...)</span>
                </a>
             </motion.div>
           </div>
